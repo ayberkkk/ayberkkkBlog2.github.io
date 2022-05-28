@@ -5,7 +5,7 @@
   box-sizing: border-box;  
   font-family: 'Montserrat', sans-serif;  
  }
-  @media screen and (min-width:0px) and (max-width:320px) {
+  @media screen and (min-width:0px) and (max-width:420px) {
       .type-writer{
         display: flex;  
         align-items: center;  
@@ -14,25 +14,32 @@
         background: #1a1d20; 
         }
     .wrapper .static-txt{  
-        color: #fff;  
-        font-size: 30px !important;  
-        font-weight: 400;  
+        color: #fff;
+        font-size: 30px !important;
+        font-weight: 200;
+        line-height: 85px !important;
        }  
        .wrapper .dynamic-txts{  
-        margin-left: 0px !important;  
-        height:30px !important;  
-        line-height: 10px;  
-        overflow: hidden;  
+       
+        height: 57px;
+        line-height: 49px;
+        overflow: hidden;
+        margin-left: 15px;  
        }  
        .dynamic-txts li{  
         list-style: none;  
         color: #13916b;  
-        font-size:15px !important;  
+        font-size:22px !important;  
         font-weight: 500;  
         position: relative;  
         top: 0;  
         animation: slide 12s steps(4) infinite;  
        } 
+       .dynamic-txts li span {
+        position: relative;
+        margin: 5px 0;
+        line-height: 90px !important;
+        }
        .imgWidth{
            margin-top:15px;
            width: 100% !important;
@@ -42,16 +49,16 @@
            text-align: center;
        }
        .text,h3{
-        font-size:14px !important;
+        font-size: 21px !important;
         text-align: center;
     }
     .textDetails{
-        font-size: 15px !important;
+        font-size: 18px !important;
         text-align: center;
         margin-top:0px !important;
     }
     .mobile-paddding{
-        padding-top:3rem !important;
+        padding-top:0rem !important;
     }
  }  
 
@@ -60,7 +67,7 @@
   display: flex;  
   align-items: center;  
   justify-content: center;  
-  min-height: 50vh;  
+  min-height: 25vh;  
   background: #1a1d20; 
 }
 .wrapper{  
@@ -213,6 +220,9 @@ footer{
 }
 #contact .bc-color:hover{
     background-color: #13916b !important;   
+}
+#about .bc-color:hover{
+    color: #13916b !important;   
 }
 .blog{
     background-color: #141618;
